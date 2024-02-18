@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind css</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="bg-blue-950">
+    <nav class="bg-indigo-950 overflow-hidden  mx-auto text-white box-border justify-between px-3 py-2 h-17 flex items-center ">    
+        <h1 title="LightCode" class="font-mono  text-yellow-600 text-2xl w-1/7">LightCode</h1>
+        <ul class="lg:flex  font-mono  justify-between w-2/5  hidden">
+            <li id="home" class="cursor-pointer mx-2 hover:text-yellow-600" title="Home"><a href="#home">Home</a></li>
+            <li id="features" class="cursor-pointer mx-2 hover:text-yellow-600" title="Features"><a href="#features">Features</a></li>
+            <li id="testimonial" class="cursor-pointer mx-2 hover:text-yellow-600" title="Testimonial"><a href="#testimonial">Testimonial</a></li>
+            <li id="pricing" class="cursor-pointer mx-2 hover:text-yellow-600" title="Pricing"><a href="#pricing">Pricing</a></li>
+            <li id="blog" class="cursor-pointer mx-2 hover:text-yellow-600" title="Blog"><a href="#blog">Blog</a></li>
+            <li id="contract" class="cursor-pointer mx-2 hover:text-yellow-600" title="Contact"><a href="#contract">Contact</a></li>
+        </ul>
+
+        <button title="lg:flex  free trial"
+            class="hidden lg:flex w-1/9 overflow-hidden font-mono subpixel-antialiased p-2 text-white  bg-yellow-600 rounded-sm hover:bg-yellow-800">freetrial</button>
+      
+        <div id="menu" class="cursor-pointer lg:hidden inline-block"><i  class=" fa-solid fa-bars mx-1 text-white"></i></div>
+        <div id="cancel" class=" cursor-pointer lg:hidden hidden "><i  class="fa-solid  fa-xmark  mx-1 text-white"></i></div>
+        
+    </nav>
+
+    <div id="hamburger" class="lg:hidden hidden max-w-max mx-auto container">
+        <ul class="flex-col text-white font-mono text-xl px-3 items-center" >
+            <li id="home" class="cursor-pointer mx-2   hover:text-yellow-600" title="Home"><a href="#home">Home</a></li>
+            <li id="features" class="cursor-pointer mx-2 hover:text-yellow-600" title="Features"><a href="#features">Features</a></li>
+            <li id="testimonial" class="cursor-pointer mx-2 hover:text-yellow-600" title="Testimonial"><a href="#testimonial">Testimonial</a></li>
+            <li id="pricing" class="cursor-pointer mx-2 hover:text-yellow-600" title="Pricing"><a href="#pricing">Pricing</a></li>
+            <li id="blog" class="cursor-pointer mx-2    hover:text-yellow-600" title="Blog"><a href="#blog">Blog</a></li>
+            <li id="contract" class="cursor-pointer mx-2 hover:text-yellow-600" title="Contact"><a href="#contract">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="cheker min-h-max overflow-hidden relative mx-auto mt-5 flex-col items-center">
+        <div class="absolute position1 blur-3xl w-1/12 h-2/6 bg-gradient-to-b rotate-45 rounded-full from-pink-500 to-purple-500"></div>
+        <div id="info1" class="info flex mx-auto">
+            <div class="flex-col  container mx-auto text-xl text-white">
+                <h1 class="text-4xl font-black antialiased font-sans">Awesome App for your financial.</h1>
+                <p class="mt-5 font-mono">This should be used to tell a story and let your users know a little more about app and its use. How can benefit them</p>
+                <button class="mt-9 rounded w-2/5 box-border overflow-hidden font-mono subpixel-antialiased p-2 text-white  bg-yellow-600  hover:bg-yellow-800">Download Now</button>
+            </div>
+            <img src="cash.jpg" title="Cash Back" alt="" class=" brightness-300  check mix-blend-multiply text-white w-9 h-12">
+            <div class="absolute position2 blur-3xl w-2/12 h-2/6 bg-gradient-to-b rotate-45 rounded-full from-red-500 to-blue-500"></div>
+        </div>
+
+        <div id="info2" class="info flex w-3/4 center ontainer mt-12 mx-auto">
+            <div class="absolute position3 blur-3xl w-2/12 h-2/6 bg-gradient-to-b rotate-45 rounded-full from-pink-400 to-purple-400"></div>
+            <img src="7038058.jpg" title="Payment" alt="" class="brightness-200  check mix-blend-multiply ">
+            <div class="flex-col container mx-auto text-xl text-white">
+                <h1 class="text-4xl font-black antialiased font-sans"> Save your money</h1>
+                <p class="mt-5 font-mono">Best financing app in the world easy to use and user friendly for mobile bankig. You can control ou card easily and send money some one just one click</p>
+                <button class="mt-9 rounded w-2/5 box-border overflow-hidden font-mono subpixel-antialiased p-2 text-white  bg-yellow-600  hover:bg-yellow-800">Read more</button>
+            </div>  
+            <div class="absolute position4 blur-3xl w-2/12 h-2/6 bg-gradient-to-b rotate-45 rounded-full from-pink-300 to-purple-300"></div>
+        </div>
+    </div>
+    
+
+    <!-- Features -->
+
+    <div class="features">
+        <div class="flex-col w-2/6 p-5 h-15 bg-center mx-5 box-border py-4 text-center center text-white border-white border-2 rounded-lg">
+            <div class="bg-orange-600 box-border p-3 mx-auto w-1/4 rounded-lg text-2xl"><i class="fa-solid fa-money-bill-wave"></i></div>
+            <h1 class="text-xl mt-3 font-bold">Expense Tracking</h1>
+            <p class="mt-5">We used an application designed a testing gnose to keep away</p> 
+        </div>
+        <div class="flex-col w-2/6 p-5 mx-5 box-border py-4 text-center center text-white border-white border-2 rounded-lg">
+            <div class= "bg-orange-600 box-border p-3 mx-auto w-1/4 rounded-lg text-2xl "><i class="fa-solid fa-chart-column"></i></div> 
+            <h1 class="text-xl  mt-3  font-bold">Finance Snapshot</h1>
+            <p class="mt-5">We used an application designed a testing gnose to keep away</p> 
+        </div>
+        <div class="flex-col w-2/6 p-5  mx-5 box-border py-4 text-center center text-white border-white border-2 rounded-lg">
+            <div class="bg-orange-600 box-border p-3 mx-auto w-1/4 h-12 rounded-lg text-2xl"><i class="fa-solid fa-phone"></i></div> 
+            <h1 class="text-xl mt-3 font-bold">Support</h1>
+            <p class="mt-5">We used an application designed a testing gnose to keep away</p> 
+        </div>
+    </div>
+
+</body>
+
+
+<script src="index.js"></script>
+</html>
